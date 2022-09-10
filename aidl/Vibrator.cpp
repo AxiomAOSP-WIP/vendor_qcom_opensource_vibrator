@@ -146,13 +146,6 @@ InputFFDevice::InputFFDevice()
             case MSM_CPU_SHIMA:
             case MSM_CPU_SM8325:
             case APQ_CPU_SM8325P:
-            case MSM_CPU_TARO:
-            case MSM_CPU_TARO_LTE:
-            case MSM_CPU_YUPIK:
-            case MSM_CPU_CAPE:
-            case APQ_CPU_CAPE:
-                mSupportExternalControl = true;
-                break;
             default:
                 mSupportExternalControl = false;
                 break;
@@ -632,4 +625,3 @@ ndk::ScopedAStatus Vibrator::composePwle(const std::vector<PrimitivePwle> &compo
 }  // namespace hardware
 }  // namespace android
 }  // namespace aidl
-
